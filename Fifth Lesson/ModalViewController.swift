@@ -18,7 +18,6 @@ class ModalViewController: UIViewController {
         let segmentControl = UISegmentedControl (items: ["280px","150px"])
         
         segmentControl.selectedSegmentIndex = 0
-        segmentControl.frame = CGRect(x: 35, y: 200, width: 250, height: 50)
         segmentControl.addTarget(self, action: #selector(segmentAction(_:)), for: .valueChanged)
     
         return segmentControl
